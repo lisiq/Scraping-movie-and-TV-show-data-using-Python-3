@@ -14,9 +14,11 @@ import re
 import json
 ```
 
-## There are two different scripts
+## There are five different scripts
 
-For shows and for movies.
+One type is to scrape data from the web-pages for shows, one is to scrape data from the web-pages for movies.
+We then have _dataframes.py_ which is the same for shows, and one for the movies. I could have done it all in the same script but I decided to do it this way since I always changed some details.
+The last one is _merger.py_.
 
 ### Shows
 
