@@ -96,3 +96,11 @@
 /shows/supernatural/season-10/episode-11/theres-no-place-like-home
 /shows/supernatural/season-10/episode-13/halt-catch-fire
 /shows/charmed/season-6/episode-22/its-a-bad-bad-bad-bad-world-part-1
+/shows/shaq-life/season-1/episode-3/shaq-vs-shaquille
+/shows/shaq-life/season-1/episode-7/shaq-daddy
+/shows/shaq-life/season-1/episode-6/shaq-vs-europe-part-2
+/shows/shaq-life/season-1/episode-5/shaq-vs-europe-part-1
+/shows/shaq-life/season-1/episode-8/shaqs-shocking-new-roommates
+/shows/shaq-life/season-1/episode-1/you-dont-know-shaq
+/shows/shaq-life/season-1/episode-2/shaq-of-all-trades
+/shows/shaq-life/season-1/episode-4/shaq-your-age

@@ -95,7 +95,7 @@ for i in new_lines:
 flat_list = [item for sublist in dict_list for item in sublist]
 
 # # create a dataframe
-to_keep = ['tvRating', 'title', 'url', 'duration', 'videoType']
+to_keep = ['tvRating', 'title', 'url', 'duration', 'videoType', 'seriesLogoImage', 'seriesTitleId','videoId']
 tbsshows_drupla_settings_json = pd.DataFrame(flat_list)[to_keep]
 
 # # finally save it
@@ -108,14 +108,23 @@ df_tbsshows = pd.merge(tbsshows_drupla_settings_json, tbsshows_ldjson, how='left
 #df_tbsshows.to_csv('/home/lisi/MediaBiz/TBS/tbsshows.csv', index=False)
 
 df_tbsshows.set_axis(['maturity_rating', 'episodes_title', 'url', 
-                    'viewable_runtime', 'is_movie', 'original_language',
+                    'viewable_runtime', 'is_movie', 'provider_original', 'series_source_id', 'source_id', 'original_language',
                     'bot_country', 'provider_release_date', 'provider_cease_date',
                     'bot_system', 'offer_type', 'episode_url', 'series_title',
-                    'series_url', 'episode_number', 'season_number'],axis=1,inplace=True)
+                    'series_url', 'episode_number', 'season_number'
+                  ],axis=1,inplace=True)
 
-df_tbsshows['program_key'] = 'E' + "| season_" + df_tbsshows['season_number'].astype(str)+ '_' + df_tbsshows['series_title']
+# a dicttionarie with all the originals and non originals
+tbs_originals = df_tbsshows[df_tbsshows['provider_original'].\
+                  notnull()][['series_title','provider_original']].\
+                reset_index(drop=True).\
+                set_index('series_title').\
+                T.to_dict('list')
 
-df_tbsshows['series_key'] = 'S' + "| " + df_tbsshows['series_title']
+# filling the empty originals
+for i in range(len(df_tbsshows)):
+    if pd.isnull(df_tbsshows['provider_original'].iloc[i]) == True:
+        df_tbsshows['provider_original'].iloc[i] = tbs_originals[df_tbsshows['series_title'].iloc[i]][0]
 
 # # save the merger
 df_tbsshows.to_csv('/home/lisi/MediaBiz/TBS/tbsshows.csv', index=False)

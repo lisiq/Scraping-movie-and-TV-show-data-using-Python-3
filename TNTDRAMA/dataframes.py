@@ -95,7 +95,7 @@ for i in new_lines:
 flat_list = [item for sublist in dict_list for item in sublist]
 
 # # create a dataframe
-to_keep = ['tvRating', 'title', 'url', 'duration', 'videoType']
+to_keep = ['tvRating', 'title', 'url', 'duration', 'videoType', 'seriesLogoImage', 'seriesTitleId','videoId']
 tntdramashows_drupla_settings_json = pd.DataFrame(flat_list)[to_keep]
 
 # # finally save it
@@ -108,14 +108,21 @@ df_tntdramashows = pd.merge(tntdramashows_drupla_settings_json, tntdramashows_ld
 #df_tntdramashows.to_csv('/home/lisi/MediaBiz/TNTDRAMA/tntdramashows.csv', index=False)
 
 df_tntdramashows.set_axis(['maturity_rating', 'episodes_title', 'url', 
-                    'viewable_runtime', 'is_movie', 'original_language',
+                    'viewable_runtime', 'is_movie', 'provider_original', 'series_source_id', 'source_id', 'original_language',
                     'bot_country', 'provider_release_date', 'provider_cease_date',
                     'bot_system', 'offer_type', 'episode_url', 'series_title',
-                    'series_url', 'episode_number', 'season_number'],axis=1,inplace=True)
+                    'series_url', 'episode_number', 'season_number'
+                  ],axis=1,inplace=True)
 
-df_tntdramashows['program_key'] = 'E' + "| season_" + df_tntdramashows['season_number'].astype(str)+ '_' + df_tntdramashows['series_title']
+tnt_originals = df_tntdramashows[df_tntdramashows['provider_original'].\
+                  notnull()][['series_title','provider_original']].\
+                reset_index(drop=True).\
+                set_index('series_title').\
+                T.to_dict('list')
 
-df_tntdramashows['series_key'] = 'S' + "| " + df_tntdramashows['series_title']
+for i in range(len(df_tntdramashows)):
+    if pd.isnull(df_tntdramashows['provider_original'].iloc[i]) == True:
+        df_tntdramashows['provider_original'].iloc[i] = tnt_originals[df_tntdramashows['series_title'].iloc[i]][0]
 
 # # save the merger
 df_tntdramashows.to_csv('/home/lisi/MediaBiz/TNTDRAMA/tntdramashows.csv', index=False)

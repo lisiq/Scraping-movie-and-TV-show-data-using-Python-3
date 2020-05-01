@@ -95,7 +95,7 @@ for i in new_lines:
 flat_list = [item for sublist in dict_list for item in sublist]
 
 # # create a dataframe
-to_keep = ['tvRating', 'title', 'url', 'duration', 'videoType']
+to_keep = ['tvRating', 'title', 'url', 'duration', 'videoType', 'seriesLogoImage', 'seriesTitleId','videoId']
 trutvshows_drupla_settings_json = pd.DataFrame(flat_list)[to_keep]
 
 # # finally save it
@@ -108,14 +108,27 @@ df_trutvshows = pd.merge(trutvshows_drupla_settings_json, trutvshows_ldjson, how
 #df_trutvshows.to_csv('/home/lisi/MediaBiz/TRUTV/trutvshows.csv', index=False)
 
 df_trutvshows.set_axis(['maturity_rating', 'episodes_title', 'url', 
-                    'viewable_runtime', 'is_movie', 'original_language',
+                    'viewable_runtime', 'is_movie', 'provider_original', 'series_source_id', 'source_id', 'original_language',
                     'bot_country', 'provider_release_date', 'provider_cease_date',
                     'bot_system', 'offer_type', 'episode_url', 'series_title',
-                    'series_url', 'episode_number', 'season_number'],axis=1,inplace=True)
+                    'series_url', 'episode_number', 'season_number'
+                  ],axis=1,inplace=True)
 
-df_trutvshows['program_key'] = 'E' + "| season_" + df_trutvshows['season_number'].astype(str)+ '_' + df_trutvshows['series_title']
+# a dictionaie of originals and non originals
+trutv_originals = df_trutvshows[df_trutvshows['provider_original'].\
+                  notnull()][['series_title','provider_original']].\
+                reset_index(drop=True).\
+                set_index('series_title').\
+                T.to_dict('list')
 
-df_trutvshows['series_key'] = 'S' + "| " + df_trutvshows['series_title']
+# fill the empty originals column
+for i in range(len(df_trutvshows)):
+    try:
+        if pd.isnull(df_trutvshows['provider_original'].iloc[i]) == True:
+            df_trutvshows['provider_original'].iloc[i] = trutv_originals[df_trutvshows['series_title'].iloc[i]][0]
+    except KeyError:
+        pass
+
 
 # # save the merger
 df_trutvshows.to_csv('/home/lisi/MediaBiz/TRUTV/trutvshows.csv', index=False)
