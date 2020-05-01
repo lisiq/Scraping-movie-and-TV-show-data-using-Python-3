@@ -1,4 +1,4 @@
-bot_system,bot_version,bot_country,capture_date,is_movie,offer_type,series_title,season_number,episode_number,program_title,provider_release_date,provider_cease_date,viewable_runtime,maturity_rating,original_language,series_url,program_url,series_source_id,source_id,is_original
+bot_system,bot_version,bot_country,capture_date,is_movie,offer_type,series_title,season_number,episode_number,program_title,provider_release_date,provider_cease_date,viewable_runtime,maturity_rating,original_language,series_url,program_url,series_source_id,source_id,provider_original
 tbs,1.0.0,US,04/19/2020,1,TVE,,,,Collateral [Uncut],03/10/2020,05/10/2020,7204,R,en,,http://www.tbs.com/movies/collateral-uncut,,,
 tbs,1.0.0,US,04/19/2020,1,TVE,,,,Identity Thief [Uncut],04/04/2020,05/05/2020,6691,R,en,,http://www.tbs.com/movies/identity-thief-theatrical,,,
 tbs,1.0.0,US,04/19/2020,1,TVE,,,,What Women Want [Uncut],04/01/2020,05/01/2020,7607,PG-13,en,,http://www.tbs.com/movies/what-women-want-theatrical,,,

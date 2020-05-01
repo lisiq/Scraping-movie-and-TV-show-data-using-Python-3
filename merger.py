@@ -44,9 +44,8 @@ merged_df['episode_number'] = merged_df['episode_number'].astype('Int64') # tran
 
 merged_df['bot_system'] = merged_df['bot_system'].apply(lambda x: np.nan if(pd.isnull(x) == True) else x.lower()) # transforming the values into lower cases
 
-merged_df = merged_df.rename(columns={'provider_original': 'is_original'}) # change name of the column
 
-merged_df['is_original'] = merged_df['is_original'].apply(lambda x: 
+merged_df['provider_original'] = merged_df['provider_original'].apply(lambda x: 
                                np.nan if(pd.isnull(x) == True) 
                                else (1  if (bool(re.search('Original', x))==True)  
                                      else 0)).astype('Int64')       # make 0 or 1 if not original or original
@@ -70,7 +69,7 @@ cols_to_order = ['bot_system', 'bot_version', 'bot_country', 'capture_date', 'is
                  'program_title', 'provider_release_date', 'provider_cease_date', 
                  'viewable_runtime', 'maturity_rating','original_language', 
                  'series_url', 'program_url', 'series_source_id', 'source_id', 
-                 'is_original'] # reordering
+                 'provider_original'] # reordering
 
 new_columns = cols_to_order + (merged_df.columns.drop(cols_to_order).tolist())
 merged_df = merged_df[new_columns]
