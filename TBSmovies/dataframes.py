@@ -89,7 +89,7 @@ for i in new_lines:
 flat_list = [item for sublist in dict_list for item in sublist]
 
 # # create a dataframe
-to_keep = ['tvRating', 'title', 'url', 'duration', 'videoType']
+to_keep = ['tvRating', 'title', 'url', 'duration', 'videoType', 'videoId']
 tbsmovies_drupla_settings_json = pd.DataFrame(flat_list)[to_keep]
 
 # # finally save it
@@ -100,7 +100,7 @@ df_tbsmovies = pd.merge(tbsmovies_drupla_settings_json, tbsmovies_ldjson, how='l
 
 
 df_tbsmovies.set_axis(['maturity_rating', 'program_title', 'url', 
-                    'viewable_runtime', 'is_movie', 'original_language',
+                    'viewable_runtime', 'is_movie', 'source_id', 'original_language',
                     'bot_country', 'provider_release_date', 'provider_cease_date',
                     'bot_system', 'offer_type', 'program_url'],axis=1,inplace=True)
 
