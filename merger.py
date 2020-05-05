@@ -38,8 +38,8 @@ merged_df['provider_release_date']= pd.to_datetime(merged_df['provider_release_d
 
 merged_df['provider_cease_date']= pd.to_datetime(merged_df['provider_cease_date']).dt.strftime('%m/%d/%Y') # transforming the column to datetime
 
-merged_df['viewable_runtime'] = merged_df['viewable_runtime'].apply(lambda x: np.nan if (pd.isnull(x) == True)
-                                                                    else (np.int64(x))) # transforming the values into integers
+merged_df['viewable_runtime'] = merged_df['viewable_runtime'].apply(lambda x: np.float64(np.nan) if (pd.isnull(x) == True)
+                                                                    else (np.int64(x))).astype('Int64') # transforming the values into integers
 
 merged_df['season_number'] = merged_df['season_number'].astype('Int64') # transforming the values into integers
 
@@ -87,6 +87,7 @@ for i in range(len(merged_df)):
 
 merged_df.iloc[null,0] = 'trutv'
 merged_df.iloc[null,2] = 'US'
+merged_df.iloc[null,5] = 'TVE'
 merged_df.iloc[null,6] = 'Adam Ruins Everything'
 merged_df.iloc[null,7] = np.int64(2)
 merged_df.iloc[null,8] = np.int64(4)
