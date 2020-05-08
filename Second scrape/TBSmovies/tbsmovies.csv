@@ -1,0 +1,74 @@
+maturity_rating,program_title,url,viewable_runtime,is_movie,source_id,original_language,bot_country,provider_release_date,provider_cease_date,bot_system,offer_type,program_url
+PG-13,My Big Fat Greek Wedding 2,\/movies\/my-big-fat-greek-wedding-2,4589.8519,movie,2061297,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/my-big-fat-greek-wedding-2
+PG-13,Star Wars: Revenge of the Sith,\/movies\/star-wars-revenge-of-the-sith,8103.2618,movie,533702,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/star-wars-revenge-of-the-sith
+R,Sex and the City 2,\/movies\/sex-and-the-city-2,7862.8216,movie,778055,en,US,2020-03-02T10:00:00+00:00,2020-05-31T07:59:32+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/sex-and-the-city-2
+G,The Wizard Of Oz,\/movies\/the-wizard-of-oz,6103.8978,movie,852,en,US,2020-05-01T08:00:00+00:00,2020-05-31T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-wizard-of-oz
+PG-13,50 First Dates,\/movies\/50-first-dates-uncut,5954.7488,movie,2193173,en,US,2020-05-02T08:00:00+00:00,2020-06-01T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/50-first-dates-uncut
+PG,Shrek 2,\/movies\/shrek-2-theatrical,5545.44,movie,2187624,en,US,2020-05-01T08:00:00+00:00,2020-07-01T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/shrek-2-theatrical
+TV-MA,"Planes, Trains and Automobiles",\/movies\/planes-trains-and-automobiles-theatrical,5558.5196,movie,2216717,en,US,2020-05-01T08:00:00+00:00,2020-05-31T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/planes-trains-and-automobiles-theatrical
+PG-13,The Imitation Game,\/movies\/the-imitation-game-uncut,6832.7259,movie,2166096,en,US,2019-11-14T22:30:00+00:00,2020-10-29T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-imitation-game-uncut
+PG-13,The Magnificent Seven,\/movies\/the-magnificent-seven-uncut,7981.1065,movie,2211226,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-magnificent-seven-uncut
+PG-13,The Terminal,\/movies\/the-terminal-uncut,7735.194,movie,2187627,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-terminal-uncut
+R,Fist Fight,\/movies\/fist-fight-theatrical,5472.4337,movie,2166094,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/fist-fight-theatrical
+PG-13,Rogue One: A Star Wars Story,\/movies\/rogue-one-a-star-wars-story-theatrical,8055.7477,movie,2167033,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/rogue-one-a-star-wars-story-theatrical
+R,The Campaign,\/movies\/the-campaign,4590.6862,movie,869313,en,US,2020-05-01T08:00:00+00:00,2020-06-13T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-campaign
+PG-13,Meet the Parents,\/movies\/meet-the-parents-uncut,6466.5935,movie,2197277,en,US,2020-04-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/meet-the-parents-uncut
+PG,Race to Witch Mountain,\/movies\/race-to-witch-mountain,5166.161,movie,736305,en,US,2020-04-09T08:00:00+00:00,2020-05-10T07:59:45+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/race-to-witch-mountain
+PG,Shrek the Third,\/movies\/shrek-the-third-theatrical,5571.6661,movie,2187625,en,US,2020-05-01T08:00:00+00:00,2020-07-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/shrek-the-third-theatrical
+PG-13,Life As We Know It,\/movies\/life-as-we-know-it,6127.3212,movie,778489,en,US,2020-05-06T08:00:00+00:00,2020-06-05T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/life-as-we-know-it
+R,The Wedding Ringer,\/movies\/the-wedding-ringer-theatrical,6113.4073,movie,2192448,en,US,2020-04-12T08:00:00+00:00,2021-04-12T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-wedding-ringer-theatrical
+R,Where's the Money,\/movies\/wheres-the-money-uncut,5143.6052,movie,2192330,en,US,2020-03-22T08:00:00+00:00,2020-06-22T07:59:15+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/wheres-the-money-uncut
+PG-13,The Dukes of Hazzard,\/movies\/the-dukes-of-hazzard-uncut,6247.9751,movie,2198245,en,US,2020-04-25T08:00:00+00:00,2020-05-21T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-dukes-of-hazzard-uncut
+R,Stronger,\/movies\/stronger-uncut,7142.5021,movie,2192496,en,US,2020-03-15T08:00:00+00:00,2020-05-16T06:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/stronger-uncut
+PG,The Lego Movie,\/movies\/the-lego-movie,5164.159,movie,896652,en,US,2020-05-01T08:00:00+00:00,2020-05-31T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-lego-movie
+,The Lego Movie in 90 Seconds,\/clips\/the-lego-movie-in-90-seconds,98,clip,tbs-clip-7821,,,,,,,
+R,Collateral,\/movies\/collateral-uncut,7204.8977,movie,2187622,en,US,2020-03-10T08:00:00+00:00,2020-05-10T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/collateral-uncut
+PG,Kicking & Screaming,\/movies\/kicking-screaming-theatrical,5689.15,movie,2197306,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/kicking-screaming-theatrical
+PG-13,Last Holiday,\/movies\/last-holiday-uncut,6702.8628,movie,2214615,en,US,2020-05-01T08:00:00+00:00,2020-07-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/last-holiday-uncut
+PG-13,Guardians of the Galaxy Vol. 2,\/movies\/guardians-of-the-galaxy-vol-2,7262.5551,movie,2041864,en,US,2020-05-01T08:00:00+00:00,2020-06-04T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/guardians-of-the-galaxy-vol-2
+PG-13,The Hobbit: The Battle of the Five Armies,\/movies\/the-hobbit-the-battle-of-the-five-armies,7865.5243,movie,974119,en,US,2020-05-02T08:00:00+00:00,2020-06-01T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-hobbit-the-battle-of-the-five-armies
+PG,Evan Almighty,\/movies\/evan-almighty-theatrical,5737.0314,movie,2197165,en,US,2020-04-01T08:00:00+00:00,2020-07-06T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/evan-almighty-theatrical
+PG-13,The Legend of Tarzan,\/movies\/the-legend-of-tarzan-theatrical,6607.4342,movie,2162438,en,US,2020-05-01T08:00:00+00:00,2020-05-31T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-legend-of-tarzan-theatrical
+PG-13,Star Wars: The Last Jedi,\/movies\/star-wars-the-last-jedi-theatrical,9106.0636,movie,2196916,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/star-wars-the-last-jedi-theatrical
+PG-13,Hellboy II: The Golden Army,\/movies\/hellboy-ii-the-golden-army-uncut,7179.2722,movie,2197147,en,US,2020-03-02T10:00:00+00:00,2020-06-16T07:59:56+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/hellboy-ii-the-golden-army-uncut
+R,Prometheus,\/movies\/prometheus-theatrical,7431.5907,movie,2165449,en,US,2020-05-01T08:00:00+00:00,2020-06-17T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/prometheus-theatrical
+R,2 Guns,\/movies\/2-guns-uncut,6557.4843,movie,2186635,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/2-guns-uncut
+R,Riddick,\/movies\/riddick-uncut,7126.9531,movie,2186636,en,US,2020-04-01T08:00:00+00:00,2020-06-30T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/riddick-uncut
+PG-13,Shut In,\/movies\/shut-in-theatrical,5458.7533,movie,2170131,en,US,2019-12-31T10:00:00+00:00,2021-01-01T09:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/shut-in-theatrical
+PG-13,Allegiant,\/movies\/allegiant-theatrical,7237.33,movie,2189477,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/allegiant-theatrical
+PG-13,Non-Stop,\/movies\/non-stop-uncut,6400.9613,movie,2189790,en,US,2020-04-17T08:00:00+00:00,2020-06-16T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/non-stop-uncut
+PG-13,Walking Tall,\/movies\/walking-tall-uncut,5186.0142,movie,2198300,en,US,2020-03-01T10:00:00+00:00,2020-05-13T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/walking-tall-uncut
+PG,Cinderella,\/movies\/cinderella,6073.2673,movie,2042539,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/cinderella
+R,Focus,\/movies\/focus-uncut,6290.7178,movie,2160765,en,US,2020-04-10T08:00:00+00:00,2020-05-11T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/focus-uncut
+PG-13,Hercules: The Thracian Wars,\/movies\/hercules-the-thracian-wars-uncut,5893.8881,movie,2196285,en,US,2020-05-01T08:00:00+00:00,2020-07-30T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/hercules-the-thracian-wars-uncut
+R,Popstar: Never Stop Never Stopping,\/movies\/popstar-never-stop-never-stopping-theatrical,5198.3265,movie,2181305,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/popstar-never-stop-never-stopping-theatrical
+PG,Star Wars: The Phantom Menace,\/movies\/star-wars-the-phantom-menace,7865.5577,movie,443967,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/star-wars-the-phantom-menace
+PG-13,The Hobbit: An Unexpected Journey,\/movies\/the-hobbit-an-unexpected-journey,9727.2508,movie,823617,en,US,2020-05-03T08:00:00+00:00,2020-06-01T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-hobbit-an-unexpected-journey
+PG,Alice through the Looking Glass,\/movies\/alice-through-the-looking-glass-theatrical,6772.5992,movie,2161134,en,US,2020-05-01T08:00:00+00:00,2020-05-31T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/alice-through-the-looking-glass-theatrical
+PG,How to Train Your Dragon,\/movies\/how-to-train-your-dragon-uncut,5872.9336,movie,2216698,en,US,2020-04-01T08:00:00+00:00,2020-05-16T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/how-to-train-your-dragon-uncut
+R,Semi-Pro,\/movies\/semi-pro-uncut,5486.6813,movie,2196115,en,US,2020-04-01T08:00:00+00:00,2020-05-16T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/semi-pro-uncut
+PG,Star Wars: A New Hope,\/movies\/star-wars-a-new-hope,7295.8553,movie,22123,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/star-wars-a-new-hope
+PG,Confessions of a Shopaholic,\/movies\/confessions-of-a-shopaholic,5352.3137,movie,684114,en,US,2020-04-23T08:00:00+00:00,2020-05-23T07:59:21+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/confessions-of-a-shopaholic
+R,American Reunion,\/movies\/american-reunion-theatrical,6772.2655,movie,2178663,en,US,2020-05-01T08:00:00+00:00,2020-06-02T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/american-reunion-theatrical
+PG-13,Insurgent,\/movies\/insurgent-theatrical,7147.2067,movie,2189499,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/insurgent-theatrical
+PG-13,Source Code,\/movies\/source-code-uncut,5601.496,movie,2189514,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/source-code-uncut
+PG-13,Divergent,\/movies\/divergent-theatrical,8382.474,movie,2189498,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/divergent-theatrical
+PG,Star Wars: Attack of the Clones,\/movies\/star-wars-attack-of-the-clones,8232.858,movie,431193,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/star-wars-attack-of-the-clones
+PG,Star Wars: The Empire Strikes Back,\/movies\/star-wars-the-empire-strikes-back,7400.8936,movie,74051,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/star-wars-the-empire-strikes-back
+PG,The Lego Batman Movie,\/movies\/the-lego-batman-movie-theatrical,6270.0638,movie,2166095,en,US,2020-05-01T08:00:00+00:00,2020-05-31T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-lego-batman-movie-theatrical
+R,The House,\/movies\/the-house-theatrical,5297.2586,movie,2181288,en,US,2020-05-02T08:00:00+00:00,2020-06-01T07:59:13+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-house-theatrical
+R,Lone Survivor,\/movies\/lone-survivor-uncut,7280.3065,movie,2194463,en,US,2020-04-18T08:00:00+00:00,2020-07-17T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/lone-survivor-uncut
+R,Ted,\/movies\/ted-uncut,6372.1325,movie,2193458,en,US,2020-02-15T10:00:00+00:00,2020-05-15T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/ted-uncut
+PG-13,Jack the Giant Slayer,\/movies\/jack-the-giant-slayer-uncut,6861.4213,movie,2218387,en,US,2020-05-01T08:00:00+00:00,2020-05-16T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/jack-the-giant-slayer-uncut
+PG-13,Pirates of the Caribbean: Dead Men Tell No Tales,\/movies\/pirates-of-the-caribbean-dead-men-tell-no-tales,6487.3809,movie,2043428,en,US,2020-05-02T08:00:00+00:00,2020-06-01T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/pirates-of-the-caribbean-dead-men-tell-no-tales
+PG-13,Inception,\/movies\/inception,8824.8495,movie,774971,en,US,2020-04-01T08:00:00+00:00,2020-07-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/inception
+G,Paddington 2,\/movies\/paddington-2-uncut,6225.9198,movie,2196406,en,US,2020-05-01T08:00:00+00:00,2020-05-31T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/paddington-2-uncut
+TV-MA,Shooter,\/movies\/shooter-uncut,7551.2772,movie,2157049,en,US,2020-04-01T08:00:00+00:00,2020-05-16T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/shooter-uncut
+PG-13,I Now Pronounce You Chuck & Larry,\/movies\/i-now-pronounce-you-chuck-larry-uncut,6925.4852,movie,2197569,en,US,2020-04-01T08:00:00+00:00,2020-07-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/i-now-pronounce-you-chuck-larry-uncut
+PG,Star Wars: Return of the Jedi,\/movies\/star-wars-return-of-the-jedi,7757.2161,movie,88074,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/star-wars-return-of-the-jedi
+R,Unfinished Business,\/movies\/unfinished-business-theatrical,5466.4277,movie,2181312,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/unfinished-business-theatrical
+PG-13,Paper Towns,\/movies\/paper-towns-theatrical,6551.4116,movie,2181306,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/paper-towns-theatrical
+R,The Accountant,\/movies\/the-accountant-theatrical,7683.0755,movie,2166445,en,US,2020-05-01T08:00:00+00:00,2020-06-01T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/the-accountant-theatrical
+PG-13,Dumb & Dumber,\/movies\/dumb-dumber-theatrical,6393.4203,movie,2193770,en,US,2020-04-01T08:00:00+00:00,2020-05-16T07:59:59+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/dumb-dumber-theatrical
+R,Eurotrip,\/movies\/eurotrip-theatrical,5415.8103,movie,2178287,en,US,2020-04-15T08:00:00+00:00,2020-06-01T07:59:38+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/eurotrip-theatrical
+TV-14,Star Wars: The Force Awakens,\/movies\/star-wars-the-force-awakens-theatrical,8289.4145,movie,2156961,en,US,2020-05-04T08:00:00+00:00,2020-06-03T07:59:00+00:00,TBS,TVE,http:\/\/www.tbs.com\/movies\/star-wars-the-force-awakens-theatrical
