@@ -38,3 +38,7 @@ For Movies we use the same approach as for the shows. The only difference is tha
 ## Final product
 
 After having all the wanted data scraped we merge all of it in one csv file by running _merger.py_. The final csv file is under the name __finalproduct.csv__.
+
+## Special links
+
+When there are special links refere to Shaq's Life or NBA on TNT to scrape them
