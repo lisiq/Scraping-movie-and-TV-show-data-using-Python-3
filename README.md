@@ -41,4 +41,4 @@ After having all the wanted data scraped we merge all of it in one csv file by r
 
 ## Special links
 
-When there are special links refere to Shaq's Life or NBA on TNT to scrape them
+When there are special links refere to Shaq's Life, NBA on TNT or Wrestling to scrape them
