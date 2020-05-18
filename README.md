@@ -41,4 +41,9 @@ After having all the wanted data scraped we merge all of it in one csv file by r
 
 ## Special links
 
-When there are special links refere to Shaq's Life, NBA on TNT or Wrestling to scrape them
+When there are special links refer to Shaq's Life, NBA on TNT or Wrestling to scrape them
+
+
+# Scraping of Adult Swim
+
+In the folder Adult Swim there is the code to scrape adultswim.com and some files with the links of shows and episodes.
