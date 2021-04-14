@@ -61,47 +61,47 @@ for i in lines:
 # after that we transofrm them into python dictionaries
 # and save them in a list. There can be some json files 
 # that do not have the info that we need so we ignore them
-# dict_list = []
-# for i in lines:
-#     try:
-#         with open('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/TNTDRAMAshows_ldjson/' + i.encode("utf-8").hex() + '.json', 'r') as j:
-#             dict_list.append(dict(eval(json.load(j).replace('null', '"NaN"')\
-#                                            .replace('true',"True")\
-#                                            .replace('false',"False"))))
-#     except SyntaxError:
-#         pass
+dict_list = []
+for i in lines:
+    try:
+        with open('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/TNTDRAMAshows_ldjson/' + i.encode("utf-8").hex() + '.json', 'r') as j:
+            dict_list.append(dict(eval(json.load(j).replace('null', '"NaN"')\
+                                           .replace('true',"True")\
+                                           .replace('false',"False"))))
+    except SyntaxError:
+        pass
 
 
 # # we define this helper function to get only the data 
 # # that we need form the dictionaries
-# def get_info(n):
-#     m = n['potentialAction'][0]
-#     url = "\\/" + "/".join(n['@id'].split("/", 4)[3:]) 
-#     genre = m['@type']
-#     language = m['target']['inLanguage']
-#     bot_country = m['actionAccessibilityRequirement']['eligibleRegion']['name']
-#     availabilityStarts = m['actionAccessibilityRequirement']['availabilityStarts']
-#     availabilityEnds = m['actionAccessibilityRequirement']['availabilityEnds']
-#     bot_system = m['actionAccessibilityRequirement']['requiresSubscription']['name']
-#     offer_type = m['actionAccessibilityRequirement']['requiresSubscription']['authenticator']['name']
-#     return [url, genre, language, bot_country, availabilityStarts, availabilityEnds, bot_system, offer_type]
+def get_info(n):
+    m = n['potentialAction'][0]
+    url = "\\/" + "/".join(n['@id'].split("/", 4)[3:]) 
+    genre = m['@type']
+    language = m['target']['inLanguage']
+    bot_country = m['actionAccessibilityRequirement']['eligibleRegion']['name']
+    availabilityStarts = m['actionAccessibilityRequirement']['availabilityStarts']
+    availabilityEnds = m['actionAccessibilityRequirement']['availabilityEnds']
+    bot_system = m['actionAccessibilityRequirement']['requiresSubscription']['name']
+    offer_type = m['actionAccessibilityRequirement']['requiresSubscription']['authenticator']['name']
+    return [url, genre, language, bot_country, availabilityStarts, availabilityEnds, bot_system, offer_type]
 
 # # we apply the helper function to all the dictionaries 
 # # and ignore the files that do not have the data that we need
-# flat_list = []
-# for i in dict_list:
-#     try:
-#         flat_list.append(get_info(i))
-#     except KeyError:
-#         pass
+flat_list = []
+for i in dict_list:
+    try:
+        flat_list.append(get_info(i))
+    except KeyError:
+        pass
         
 # # here we create a data fram from the list overhead and name the columns
-# tntdramashows_ldjson = pd.DataFrame(flat_list, 
-#                                columns=['url', 'genre', 'language', 'bot_country', 'availabilityStarts', 
-#                                         'availabilityEnds', 'bot_system', 'offer_type'])
+tntdramashows_ldjson = pd.DataFrame(flat_list, 
+                               columns=['url', 'genre', 'language', 'bot_country', 'availabilityStarts', 
+                                        'availabilityEnds', 'bot_system', 'offer_type'])
 
 # # finally we save the data as a csv file
-# tntdramashows_ldjson.to_csv('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/tntdramashows_ldjson.csv', index=False)
+tntdramashows_ldjson.to_csv('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/tntdramashows_ldjson.csv', index=False)
 
 # there is another json file that contain some more information
 # we will scrape also that
@@ -129,27 +129,27 @@ for i in new_lines:
 
 # we open the files transform them into dictionaries, make the syntax python friendly
 # and ignore the files that do not have the data that we need
-# flat_list = []
-# dict_list = []
-# for i in new_lines:
-#     try:
-#         with open('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/TNTDRAMAshows_drupla-settings-json/' + i.encode("utf-8").hex() + '.json', 'r') as j:
-#             dict_list.append(dict(eval(json.load(j).replace('null', '"NaN"')\
-#                                        .replace('true',"True")\
-#                                        .replace('false',"False")))['turner_playlist'])
-#     except KeyError:
-#         pass
+flat_list = []
+dict_list = []
+for i in new_lines:
+    try:
+        with open('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/TNTDRAMAshows_drupla-settings-json/' + i.encode("utf-8").hex() + '.json', 'r') as j:
+            dict_list.append(dict(eval(json.load(j).replace('null', '"NaN"')\
+                                       .replace('true',"True")\
+                                       .replace('false',"False")))['turner_playlist'])
+    except KeyError:
+        pass
 
 # # transform from a nested list into a list         
-# flat_list = [item for sublist in dict_list for item in sublist]
+flat_list = [item for sublist in dict_list for item in sublist]
 
 # # create a dataframe
-# tntdramashows_drupla_settings_json = pd.DataFrame(flat_list)
+tntdramashows_drupla_settings_json = pd.DataFrame(flat_list)
 
 # # finally save it
-# tntdramashows_drupla_settings_json.to_csv('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/tntdramashows_drupla_settings_json.csv', index=False)
+tntdramashows_drupla_settings_json.to_csv('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/tntdramashows_drupla_settings_json.csv', index=False)
 
 # # save the merger
-# df_tntdramashows = pd.merge(tntdramashows_drupla_settings_json, tntdramashows_ldjson, how='left', on='url')
+df_tntdramashows = pd.merge(tntdramashows_drupla_settings_json, tntdramashows_ldjson, how='left', on='url')
 
-# df_tntdramashows.to_csv('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/tntdramashows.csv', index=False)
+df_tntdramashows.to_csv('/home/lisi/MediaBiz/Second scrape/TNTDRAMA/tntdramashows.csv', index=False)
