@@ -14,43 +14,43 @@ urlshows = 'https://www.adultswim.com/videos'
 
 
 
-# # # we scrape all the urls from the web-page
-# # # we only keep the ones that have /vidoes/ in it
-# r = requests.get(urlshows)
-# c = r.content
-# soup = BeautifulSoup(c, 'html.parser')
-# result = []
-# for a in soup.find_all('a', href=True):
-#     if a['href'][:8] == '/videos/':
-#            result.append(a['href'])
+# # we scrape all the urls from the web-page
+# # we only keep the ones that have /vidoes/ in it
+r = requests.get(urlshows)
+c = r.content
+soup = BeautifulSoup(c, 'html.parser')
+result = []
+for a in soup.find_all('a', href=True):
+    if a['href'][:8] == '/videos/':
+           result.append(a['href'])
 
 
-# # # we remove the duplicated links
-# # # save all the links for furute needs
-# shows = list(set(result))
-# for i in shows:
-#     with open('/home/lisi/Desktop/AdultSwim/shows.txt', 'a') as f:
-#         f.write(i+'\n')
+# # we remove the duplicated links
+# # save all the links for furute needs
+shows = list(set(result))
+for i in shows:
+    with open('/home/lisi/Desktop/AdultSwim/shows.txt', 'a') as f:
+        f.write(i+'\n')
 
 
-# with open('/home/lisi/Desktop/AdultSwim/shows.txt', 'r') as file:
-#     lines = [line.strip() for line in file]
+with open('/home/lisi/Desktop/AdultSwim/shows.txt', 'r') as file:
+    lines = [line.strip() for line in file]
 
-# # we now save all the episodes from all the shows in his file
-# episodes = []
-# for i in lines:
-#     r = requests.get(url + i)
-#     c = r.content
-#     soup = BeautifulSoup(c, 'html.parser')
-#     for a in soup.find_all('a', href=True):
-#         if a['href'][:8] == '/videos/':
-#             episodes.append(a['href'])
+# we now save all the episodes from all the shows in his file
+episodes = []
+for i in lines:
+    r = requests.get(url + i)
+    c = r.content
+    soup = BeautifulSoup(c, 'html.parser')
+    for a in soup.find_all('a', href=True):
+        if a['href'][:8] == '/videos/':
+            episodes.append(a['href'])
 
-# # remove the duplicaes and save for future needs
-# episodes = list(set(episodes))
-# for i in episodes:
-#     with open('/home/lisi/Desktop/AdultSwim/episodes.txt', 'a') as f:
-#         f.write(i+'\n')
+# remove the duplicaes and save for future needs
+episodes = list(set(episodes))
+for i in episodes:
+    with open('/home/lisi/Desktop/AdultSwim/episodes.txt', 'a') as f:
+        f.write(i+'\n')
         
 with open('/home/lisi/Desktop/AdultSwim/episodes.txt', 'r') as file:
     lines = [line.strip() for line in file]
@@ -58,14 +58,14 @@ with open('/home/lisi/Desktop/AdultSwim/episodes.txt', 'r') as file:
 
 # open all the links and scrape the json file that has some data about the series
 # and save them so we do not have to redowload them if we make some mistakes in the future
-# for i in lines:
-#     r = requests.get(url + i)
-#     c = r.content
-#     soup = BeautifulSoup(c, 'html.parser')
-#     with open('/home/lisi/Desktop/AdultSwim/ldjson/' +  i. replace('/','') + '.json', 'w') as j:
-#         j.write(json.dumps(
-#             str(soup.find_all(lambda tag: tag.name == 'script' and 
-#                               tag.get('type') == 'application/json'))[52:-10]))
+for i in lines:
+    r = requests.get(url + i)
+    c = r.content
+    soup = BeautifulSoup(c, 'html.parser')
+    with open('/home/lisi/Desktop/AdultSwim/ldjson/' +  i. replace('/','') + '.json', 'w') as j:
+        j.write(json.dumps(
+            str(soup.find_all(lambda tag: tag.name == 'script' and 
+                              tag.get('type') == 'application/json'))[52:-10]))
 
 
 # we open the json files and make the syntax python friendly
